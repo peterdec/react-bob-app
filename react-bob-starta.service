@@ -1,0 +1,12 @@
+[Unit]
+Description=React bob upstarta
+
+
+[Service]
+
+WorkingDirectory=/usr/lib/node_modules/react-bob-app/
+ExecStart=/usr/bin/npm run preview
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
